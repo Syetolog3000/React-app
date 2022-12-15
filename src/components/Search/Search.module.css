@@ -1,0 +1,109 @@
+.head {
+  width: 100%;
+  height: 250px; 
+  display: flex;
+  justify-content: center;
+  object-fit: cover;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background-repeat: no-repeat;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+}
+
+.back-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  z-index: -1;
+  filter: brightness(40%)
+}
+
+.title {
+  font-size: 32px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  height: 50px;
+  margin-top: 5px;
+  border-radius: 25px;
+  padding: 10px 20px;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+}
+
+.sort, .categories {
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  display: flex;
+  gap: 10px;
+}
+
+.sort select, .categories select {
+  border-radius: 8px;
+  min-width: 100px;
+  outline: none;
+}
+
+
+.settings-search {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.title img {
+  width: 32px;
+  height: 32px;
+  padding-top: 5px;
+  padding-left: 8px;
+}
+
+.search-input {
+  height: 25px;
+  border: none;
+  outline: none;
+  color: white;
+  font-weight: bold;
+  background: rgb(29, 28, 28);
+  flex-grow: 2;
+}
+
+.input-img {
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgb(29, 28, 28);
+  border-radius: 15px;
+  padding: 10px 20px;
+}
+
+
+.input-img img {
+  width: 36px;
+  height: 36px;
+}
+
+@media screen and (max-width: 450px) {
+  .input-img {
+    width: 250px;
+  }
+
+  .settings-search {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .head {
+    gap: 25px;
+  }
+}

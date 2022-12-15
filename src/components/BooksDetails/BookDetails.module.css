@@ -1,0 +1,25 @@
+.book-details  {
+  height: calc(100vh - 250px);
+  display: flex;
+  flex-direction: row;
+}
+
+.book-info {
+  padding: 20px;
+}
+
+.book-image {
+  display: flex;
+  justify-content: center;
+  background: rgb(61, 59, 59);
+}
+
+.book-image img {
+  padding: 100px 40px;
+}
+
+@media screen and (max-width: 800px) {
+  .book-details {
+    flex-direction: column;
+  }
+}

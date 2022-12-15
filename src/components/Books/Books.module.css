@@ -1,0 +1,28 @@
+.books {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.title, .load {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.books a{
+  text-decoration: none;
+  color: rgb(112, 107, 107)
+}
+
+.load button{
+  width: 100px;
+  height: 30px;
+  background: rgb(116, 111, 111);
+  color:rgb(250, 235, 235);
+  border-radius: 10px;
+  outline: none;
+  border-width: 1px;
+  margin: 10px
+}
